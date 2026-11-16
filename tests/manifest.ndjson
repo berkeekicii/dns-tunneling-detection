@@ -1,0 +1,3 @@
+{"name":"good_spotify","pcap":"data/good-spotify.pcapng","label":"good","config":"config/demo.toml"}
+{"name":"bad_exfil_demo","pcap":"data/dns-lab-10q.pcapng","label":"bad","config":"config/demo.toml"}
+

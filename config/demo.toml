@@ -1,0 +1,25 @@
+[thresholds]
+score_alert = 1.0
+min_domain_len = 50         # 60 -> 50
+min_entropy = 3.5           # 4.0 -> 3.5
+min_txt_ratio = 0.30        # 0.80 -> 0.30  (dnscat2/iodine farklı tipler kullanır)
+min_label_count = 4         # 3 -> 4 (tünellerde parça sayısı yüksek)
+min_qps_client = 0.0
+min_unique_sub_ratio = 0.50 # 0.0 -> 0.50 (tünelde benzersiz sub oranı artar)
+min_nxdomain_ratio = 0.30   # 0.0 -> 0.30  (birçok tünelde NXDOMAIN belirgindir)
+
+[whitelist]
+roots = ["in-addr.arpa", "ip6.arpa"]
+
+[blacklist]
+roots = [] # LAB'ta boş kalsın
+
+[ml]
+mode = "onnx"
+model_path = "models/iforest.onnx"
+score_threshold = -0.12            # daha NEGATİF = daha anormal; spotify 0.070 => benign
+window_secs = 30
+min_hits = 1
+
+[output]
+ndjson_path = "target/alerts.ndjson"

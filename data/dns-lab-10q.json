@@ -1,0 +1,16 @@
+﻿{
+    "bad":  [
+                "zbe5d9bk89rc1iqx3bbtv4vkvpd0zwrs42xcwc5egwl08f67.sub1.exfil.demo.invalid",
+                "ptyo3kpq3fg8vii830exs1c0112eekljbfvxla3dh3fb9a7j.sub2.exfil.demo.invalid",
+                "e1k8l4cy2hioi2n6jgm0m4hfpg67j56gz8vmyawcfwu5mr5n.sub3.exfil.demo.invalid",
+                "ezudmsels6u601pnp2p63fknz7orked8ekmi23vm5sto56dx.sub4.exfil.demo.invalid",
+                "jkbq1o2hped4kgc22498rk97uyxbpiz61v7grvhdu8nb0c4c.sub5.exfil.demo.invalid"
+            ],
+    "good":  [
+                 "www.microsoft.com",
+                 "www.google.com",
+                 "www.wikipedia.org",
+                 "www.cloudflare.com",
+                 "www.spotify.com"
+             ]
+}

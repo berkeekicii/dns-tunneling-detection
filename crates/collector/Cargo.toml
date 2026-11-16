@@ -1,0 +1,9 @@
+[package]
+name = "collector"
+version = "0.1.0"
+edition = "2024"   # diğerleriyle aynı
+
+[dependencies]
+anyhow = "1"
+pcap = "0.10"
+dns-parser = "0.8"

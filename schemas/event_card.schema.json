@@ -1,0 +1,37 @@
+{
+    "type": "object",
+    "required": [
+        "root_domain",
+        "client_ip",
+        "first_seen",
+        "last_seen",
+        "signals"
+    ],
+    "properties": {
+        "root_domain": {
+            "type": "string"
+        },
+        "client_ip": {
+            "type": "string"
+        },
+        "first_seen": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "last_seen": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "signals": {
+            "type": "object",
+            "properties": {
+                "rules": {
+                    "type": "number"
+                },
+                "ml": {
+                    "type": "number"
+                }
+            }
+        }
+    }
+}

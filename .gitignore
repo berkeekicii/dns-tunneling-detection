@@ -1,0 +1,13 @@
+/target/
+**/*.exe
+**/*.pdb
+
+/onnxruntime-win-x64-1.22.1.zip
+/runtime/
+/_tmp_copy.txt
+
+/onnxruntime-win-x64-1.22.1.zip
+/runtime/
+/_tmp_copy.txt
+
+/data/*.etl

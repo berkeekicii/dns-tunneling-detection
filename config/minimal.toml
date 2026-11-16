@@ -1,0 +1,30 @@
+﻿[thresholds]
+score_alert = 0.40
+min_entropy = 3.2
+min_unique_sub_ratio = 0.25
+min_nxdomain_ratio = 0.70
+min_qps_client = 10
+min_domain_len = 20
+min_label_count = 3
+min_txt_ratio = 0.10
+
+[whitelist]
+roots = [
+  "spotify.com",
+  "microsoft.com",
+  "windowsupdate.com",
+  "dns.google",
+  "one.one.one.one",
+  ".arpa",
+]
+
+[blacklist]
+roots = [
+  
+]
+
+
+[ml]
+mode = "onnx"
+model_path = "models/iforest.onnx"
+score_threshold = -0.2
